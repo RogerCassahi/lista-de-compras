@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <!--Painel de edição-->        
+   <div id="painelValorTotalGasto">
+    
+    <span id="valorTotalGasto"></span>
+ </div>  
+  <!--Painel de edição-->  
+
+
+<div class="container">
+    <header>
+        <div id="titulo">
+            <img src="./img/logotipo.svg" alt="logotipo">
+            <h1>Lista de compras</h1>
+        </div>
+    </header>
+    <nav>
+         <div id="cadastro">
+              <input type="text"  class= "input-cadastro" id="nomeProduto" placeholder="Nome do produto" pattern="[a-zA-Z0-9]+"required>
+              <input type="text" name="numbers" class= "input-cadastro" id="custoProduto" placeholder="Preço ex:11,11" pattern="[0-9]+$" required  pattern="[0-9]+$">
+              <input type="text" name="numbers" class= "input-cadastro" id="quantidadeProduto" placeholder="Digite a quantidade" required pattern="[0-9]+$">
+              <input type="button" id="btn-adicionar"onclick="adicionar()" value="Adicionar">
+              
+              <input type="checkbox" id="check">
+	          <label for="check" class="checkbtn">
+			        <p id="btn-mostrarValorTotal" onclick="mostrarValorTotal()">Quero ver o valor total</i>
+		      </label>
+            </div>
+    </nav>
+
+    <section>
+        <table >
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Valor</th>
+                <th>Quantidade</th>
+                <th></th>
+            </tr>
+        </thead>
+       
+        <tbody id="lista-adicionada">
+    
+    
+    <!--Painel de edição-->        
+    <div id="editar">
+    
+        <input type="text" id="novoProduto">
+        <input type="text"  id="novoValor">
+        <input type="text"  id="novaQuantidade">
+        <input type="button" id="btn-editar" onclick="editarValores()" value="Confirmar">
+    </div>  
+     <!--Painel de edição-->  
+     
+   
+        </tbody>
+    </table>     
+    </section>
+</div>
+
+
+</div>
+
+<script src="./js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+header{
+    grid-area: header;
+    background-color: var(--backgroundColorHeader);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--letraTituloHeader);
+}
+
+
+
+#titulo img{
+    width: 60px;
+    height: 80px;
+    padding: 0 15px;
+}
+
+

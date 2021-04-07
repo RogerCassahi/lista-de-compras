@@ -1,0 +1,59 @@
+section{
+   grid-area:section ;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.liBtn{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var( --backgroundTabela);
+    padding: 10px;
+}
+.btnEditar, .btnExcluir{
+    width: 40px;
+    height:40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btnExcluir{
+    background-image: url(../img/excluir.svg);
+    background-color: var(--backgroundBtnExcluir);
+    margin-left: 15px;
+}
+.btnExcluir:hover{
+    background-color: var(--backgroundBtnExcluirHover);
+}
+.btnEditar{
+    background-image: url(../img/editar.svg);
+    background-color: var(--backgroundBtnEditar);
+}
+.btnEditar:hover{
+    background-color: var(--backgroundBtnEditarHover);
+}
+
+/*t-body adicionado*/
+#lista-adicionada{
+    overflow: scroll;
+}
+
+thead{
+    background-color: var(--backgroundTabelaHead);
+    color: var(--letraTabela);
+}
+
+th{
+    width: 200px;
+}
+td{
+    text-align: center;
+    background-color: var( --backgroundTd);
+    color: var(--letraTabela);
+    padding: 10px;
+}
+

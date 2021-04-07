@@ -1,0 +1,66 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 40vh 70vh;
+    grid-template-areas: "header"
+                         "nav"
+                         "section";
+
+                        }
+
+
+@media screen and (max-width : 1150px) {
+    .container{
+        
+        grid-template-rows: 10vh 50vh 30vh;
+        grid-template-areas:  "header"
+                              "nav"
+                              "section"
+    }
+    /*header*/
+    #titulo h1 {
+        display: none;
+        
+    }
+    #titulo img {
+        width: 60px;
+        height: 80px;
+        
+    }
+
+    #editar{
+       width: 30vw;
+       height: 40vh;
+    }
+    /*nav*/
+   
+   
+}
+
+@media screen and (max-width : 500px) {
+  
+    /*header*/
+  
+    #titulo img {
+        width: 40px;
+        height: 80px;
+        
+    }
+
+     /*Nav*/
+     .input-cadastro{
+        width: 200px;
+        height: 50px;
+     }
+    /*section*/
+    #inf-tabela{
+        width: 81%;
+    }
+  
+    #editar{
+        width: 70vw;
+        height: 45vh;
+    }
+    
+    
+}

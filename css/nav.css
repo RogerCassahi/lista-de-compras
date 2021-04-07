@@ -1,0 +1,52 @@
+nav{
+    grid-area: nav;
+    background-color: var(--backgroundColorNav);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cadastro{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 350px;
+    margin: auto;
+}
+.input-cadastro{
+    background-color: transparent;
+    box-shadow: 2px 2px 2px 1px var(--borderInputNav);
+    border-radius: 15px;
+    height: 40px;
+    width: 180px;
+    text-align: center;
+    color: var(--preto1);
+    border: 2px solid var(--borderInputNav);
+}
+
+.input-cadastro:focus{
+    height: 50px;
+    width: 250px;
+    border: 2px solid var(--borderInputNavFocus);
+    box-shadow: 2px 2px 4px 2px var(--borderInputNavFocus);
+} 
+
+#btn-adicionar{
+    width: 120px;
+    height: 40px;
+    background-color: var(--btnAdicionar);
+    border: none;
+    border-radius: 15px;
+    color: var(--btnAdicionarLetra);
+}
+
+#btn-adicionar:hover{
+    background-color: var(--btnAdicionarHover);
+    cursor: pointer;
+    color: var(--btnAdicionarLetraHover);
+ }
+    
+
+
